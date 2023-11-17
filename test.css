@@ -1,0 +1,42 @@
+/* B one - target the anchor tag a change the color */
+nav a {
+    color: green;
+
+}
+/*B two- target the first h2 tag and change the text and background color*/
+.title h2{
+    color:black ;
+}
+nav h2 {
+    color: red;
+    background-color: snow;
+}
+/* B three- target the first p tag and change the color to red */
+ul+p {
+    color: red;
+
+
+}
+/* C one-target the anhcor tag with attribute "href"and change the color to red and remove the text underline*/
+a[href] {
+    color: red;
+    text-decoration: none;
+}
+
+a[class="active"] {
+    color: blue;
+    text-decoration: underline;
+}
+a[target="_self"] {
+background-color: gray;
+}
+p:last-child ::after{
+    content:"...."
+}
+li ::marker{
+    color: green;
+}
+p:nth-child(even)::first-letter{
+    color: red;
+    font-size: 30px;
+}
